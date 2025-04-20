@@ -1,0 +1,8 @@
+#featured {
+    /* Aplicando o nesting, neste caso quero que todas as imagens dentro do container tenha uma altura de 100% da sua caixa e quero que o object fit seja cover, para que a imagem não se estique e mantenha a qualidade. Assim todas as imagens terão o mesmo tamanho no container. */
+    img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+}
