@@ -15,7 +15,7 @@
         margin-inline: auto; 
     }
 
-    div::nth-child(3){
+    div:nth-child(3){
         justify-self: end;
     }
 }
@@ -25,4 +25,5 @@
     border: solid 1px var(--stroke-color);
     /* Removendo as bordas das laterais */
     border-inline: none;
+    justify-content: space-between;
 }
