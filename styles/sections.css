@@ -3,6 +3,28 @@
     img {
         height: 100%;
         object-fit: cover;
+        
+    }
+/* Nessa forma abaixo funciona como se o before estivesse sendo aplicado diretamente no card. Como o before não pode ser iniciando sem um elemento anterior, é necessario adicionar o &. */
+    .card {
+        position: relative;
         border-radius: 4px;
+        /* Esconde o transbordamento, ou seja, tudo que passar da caixa. */
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background: linear-gradient(
+                /* Primeiro informamos o grau que queremos */
+                180deg,
+                /* Qual a primeira cor que quero, neste caso sera transparente saindo do 0 */
+                transparent 0%,
+                /* E agora insiro a cor que irá em seguida do transparente e qual a porcentagem que quero, sendo assim a cor vai sair do transparente até a cor debaixo indo de 0 a 100% */
+                #020617 100%
+            );
+        }
     }
 }
