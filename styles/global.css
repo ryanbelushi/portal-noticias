@@ -54,3 +54,16 @@ img {
 main {
     margin-top: 40px;
 }
+/* Aplicando displau inline-block para que a imagem de fundo não ocupe todo o container, e para que o espaçamento funcione. Assim a cor ficara somente no texto e o padding irá fazer com que ela expanda só um pouco */
+.content-tag {
+    display: inline-block;
+    background-color: var(--brand-color-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font: 500 10px/1.2 var(--font-family);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-color-primary);
+    /* O primeiro valor é o posicionamento x, o segundo posicionamento Y e o terceiro valor é o espalhamento da sombra, ja o ultimo será a cor. */
+    box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
+}
